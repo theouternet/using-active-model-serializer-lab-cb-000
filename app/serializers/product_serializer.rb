@@ -1,4 +1,4 @@
-class ProductSerializer < ActiveRecord::Serializer
-  attributes :id, :name, :description, :inventory, :price
- has_many :orders
+class ProductSerializer < ActiveModel::Serializer
+  attributes :id, :name, :price, :inventory, :description
+  has_many :orders
 end
